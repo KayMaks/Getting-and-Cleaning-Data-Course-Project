@@ -1,13 +1,13 @@
-#Code Book
+# Code Book
 
-##Study Design
+## Study Design
 The data used for this project was provided in the zip file below:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 This data was originally obtained from the website:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 This data was untidy with the aim of the assignment being to collect and work with data, and tidy a dataset. To do, I downloaded the zip file and unzipped it, placing all the necessary files into folder in my PC. First, I loaded the necessary packages needed to clean the data, then I set my working directory to that specific folder. I loaded the files into R and gave them unique column names before binding them together to create one dataset. After that, I extracted first two columns along with the columns containing the terms “mean” and “std”, and then I used the activity labels to replace the values in column 2, and thus explain which levels of activity received which values. I then changed the column names by removing the special characters and making them more descriptive. Lastly, I created a tidy data set based on this data set that took the mean of each group of activity per variable and per subject.
 
-##Codebook/Variables
+## Codebook/Variables
 These are the variables using the original names from the features.txt file:
  [1] "Subject"                        	 "Activity"                       
  [3] "tBodyAcc-mean()-X"              "tBodyAcc-mean()-Y"              
