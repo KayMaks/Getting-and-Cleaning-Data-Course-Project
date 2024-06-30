@@ -1,7 +1,7 @@
 # Code Book
 
 ## Study Design
-The data used for this project was provided in the zip file below:
+The data used for this project was provided in the zip file below, and was collected from accelerometers from the Samsung Galaxy S smartphone used by the subjects:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 This data was originally obtained from the website:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
