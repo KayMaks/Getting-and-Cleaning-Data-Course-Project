@@ -1,4 +1,7 @@
-#Set working directory to location of all necessary unzipped files
+#Unzip file and create a folder to place all the necessary files into, namely
+#subject_test.txt, subject_train.txt, y_test.txt, y_train.txt, X_test.txt,
+#X_train.txt, activity_labels.txt, features.txt
+#Set working directory to this new location
 #Load necessary packages (dplyr)
 library(dplyr)
 
@@ -54,6 +57,10 @@ colnames(SubjectActivity) <- columnnames
 #Create a second, independent tidy data set with the average of each variable
 #for each activity and each subject
 #Group by Subject and Activity, then summarise 
-SubjectActivity.Means <- SubjectActivity %>%
+SubjectActivityMeans <- SubjectActivity %>%
                         group_by(Subject, Activity) %>%
                         summarise_all(mean)
+
+#Peer review section: Create a txt file cntaining the data set created above
+#with write.table() using row.name=FALSE
+write.table(SubjectActivityMeans, "TidyData.txt",row.name=FALSE)
